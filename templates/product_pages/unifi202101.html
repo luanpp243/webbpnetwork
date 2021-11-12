@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+    <link rel="stylesheet" href = "{% static 'css/bootstrap.min.css'%}" type='text/css'>
+{% block title %} sản phẩm{% endblock %}
+
+{% block content %}
+    {% for uni in object_unifi %}
+            <div>
+              <a href="{% url 'intro' %}"><img src="{% static 'images/coverhome1.jpg' %}" style="height: 350px;" class="d-block w-100" alt="..."></a>
+                        <img src="{{ uni.picture1.url }}" class="img-fluid rounded-start" alt=" ac lite">
+                        <li>{{ uni.name }}</li>
+                         <li>{{ uni.code_number }}</li>
+
+            </div>
+     {% endfor %}
+
+{% endblock %}

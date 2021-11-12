@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+    {% load static %}
+   {% block title %}Trang chủ{% endblock %}
+
+<!-- ------------------------- Block content ---------------------------------->
+
+{% block content %}
+<div>
+ <h4>
+     <center class="text-danger"  style="margin-bottom: 50px;">DANH SÁCH THIẾT BỊ DRAYTEK</center>
+ </h4>
+        <div class="row">
+                    {% for  item in object_draytek %}
+                         <div class="col-sm-6">
+                            <div class="card mb-3" style="max-width: 500px;height: 350px;">
+                                  <div class="row g-0">
+                                        <div class="col-md-4">
+                                          <img src="{{ item.picture1.url }}" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                          <div class="card-body">
+                                            <h5 class="card-title">{{ item.name }}</h5>
+                                            <p class="card-text">
+                                                    <li>Thương hiệu:  <strong>{{ item.brand }}</strong></li>
+                                                    <li>Tình trạng:  <strong>{{ item.status }}</strong> </li>
+                                            </p>
+                                            <a href="http://m.me/103237812169437" target="_blank" class="btn btn-primary">Liên hệ giá tốt và giá sỉ</a>
+                                          </div>
+                                        </div>
+                                        <div class="container" style="padding-left: 20px;padding-right: 20px;">
+                                            <a href="/{{ item.code_number }}/" class="btn btn-outline-primary btn-sm " >Chi tiết</a>
+                                            <p class="card-text"> {{ item.summary|linebreaks }} </p>
+                                        </div>
+
+                                  </div>
+                            </div>
+                      </div>
+                {% endfor %}
+</div>
+
+{% endblock %}
+
+

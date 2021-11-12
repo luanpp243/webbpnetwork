@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} sản phẩm{% endblock %}
+
+{% block content %}
+     <h3>
+     <center class="text-danger"  style="margin-bottom: 50px;">CÁC LOẠI THIẾT BỊ MẠNG</center>
+ </h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card" style="height: 320px;">
+            <a href="{% url 'router' %}" style="text-decoration: none; color: #1a1e21;">
+                <img src="{%  static 'images/icon-router.jpg' %}" class="card-img-top" style="height: 150px;" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: #0a53be">Thiết bị Router</h5>
+                    <p class="card-text">Các Router (bộ định tuyến) chịu tải cao, cân bằng tải phù hợp cho công ty, doanh nghiệp, quán cà phê, cửa hàng, gia đình ...  </p>
+                  </div>
+            </a>
+        </div>
+      </div>
+      <div class="col">
+                <div class="card" style="height: 320px;">
+                    <a href="{% url 'switch' %}" style="text-decoration: none; color: #1a1e21" >
+                    <img src="{% static 'images/icon-switch.jpg' %}" class="card-img-top"  style="height: 150px;"  alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title" style="color: #0a53be">Thiết bị chuyển mạch (Switch)</h5>
+                    <p class="card-text">Các thiết bị chuyển mạch (Switch) giao diện cổng 1 Gigabit đa dạng chủng loại, đáp ứng các nhu cầu khách nhau ...</p>
+                    </div>
+                    </a>
+                </div>
+
+
+      </div>
+      <div class="col">
+              <div class="card" style="height: 320px;">
+                  <a href="{% url 'wifi' %}" style="text-decoration: none; color: #1a1e21" >
+                    <img src="{% static 'images/icon-wifi.jpg' %}" class="card-img-top" style="height: 150px;"  alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title" style="color: #0a53be">Thiết bị phát Wifi</h5>
+                    <p class="card-text">Thiết bị phát Wifi phát sóng mạnh, 2 băng tần 2,4 Ghz và 5 Ghz, độ phủ rộng, xuyên tường ... </p>
+                    </div>
+                  </a>
+                </div>
+      </div>
+      <div class="col">
+              <div class="card" style="height: 320px;">
+                  <a href="{% url 'camera' %}" style="text-decoration: none; color: #1a1e21">
+                    <img src="{% static 'images/icon-camera.jpg' %}" class="card-img-top" style="height: 150px;"  alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title" style="color: #0a53be">Thiết bị Camera an ninh</h5>
+                    <p class="card-text">Thiết bị Camera IP, Wifi, Indoor, Outdoor , đa dạng mẫu mã ... </p>
+                  </div>
+                  </a>
+              </div>
+      </div>
+</div>
+{% endblock %}
