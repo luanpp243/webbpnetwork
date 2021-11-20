@@ -38,7 +38,7 @@ class Product(models.Model):
     description = models.TextField()
     picture1 = models.ImageField( upload_to='static/images/pictue_up')  # chú ý ko thêm thuộc tính Heigh, width cho image khi save báo lỗi Name not string
     picture2 = models.ImageField(upload_to='static/images/pictue_up', null=True)
-    data_sheet = models.FileField(upload_to='static/images/file_up', null=True)
+    data_sheet = models.FileField(upload_to='static/images/file_up', blank=True)
 
     def __str__(self):
         return self.name

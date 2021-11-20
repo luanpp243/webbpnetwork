@@ -30,7 +30,22 @@ urlpatterns = [
    path('camera/', views.camera_classify_view, name='camera'),
 
    #url chi tiết sản phẩm
-   path('unifi202101/',views.unifi202101_view),
+   path('mikrotik202101/',views.mikrotik202101_view),
+   path('mikrotik202102/',views.mikrotik202102_view),
+   path('draytek202101/', views.draytek202101_view),
+   path('draytek202102/', views.draytek202102_view),
+   path('tplink202101/', views.tplink202101_view),
+   path('tplink202102/', views.tplink202102_view),
+   path('hpe202101/', views.hpe202101_view),
+   path('hpe202102/', views.hpe202102_view),
+   path('unifi202101/', views.unifi202101_view),
+   path('unifi202102/', views.unifi202102_view),
+   path('linksys202101/', views.linksys202101_view),
+   path('linksys202102/', views.linksys202102_view),
+   path('camera202101/', views.camera202101_view),
+   path('camera202102/', views.camera202102_view),
+   path('other202101/', views.other202101_view),
+   path('other202102/', views.other202102_view),
 
 
 

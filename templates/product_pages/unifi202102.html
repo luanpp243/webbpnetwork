@@ -5,17 +5,17 @@
 
 {% block content %}
     {% for item in object_unifi %}
-        {% if item.code_number == 'unifi202101' %}
+        {% if item.code_number == 'unifi202102' %}
             <div class="container" style="padding-top: 50px;">
                     <div class="row">
                         <div class=" col-sm-7">
                                 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="10000">
                                   <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="10000">
-                                      <img src="{{ item.picture1.url }}" class="d-block w-100" style="height: 320px;" alt="unifi ac lite">
+                                      <img src="{{ item.picture1.url }}" class="d-block w-100" style="height: 320px;" alt="unifi ac pro">
                                     </div>
                                     <div class="carousel-item" data-bs-interval="2000">
-                                      <img src="{{ item.picture2.url}}" class="d-block w-100" style="height: 320px;"  alt="unifi ac lite">
+                                      <img src="{{ item.picture2.url}}" class="d-block w-100" style="height: 320px;"  alt="unifi ac pro">
                                     </div>
                                   </div>
                                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">

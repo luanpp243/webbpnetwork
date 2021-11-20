@@ -56,10 +56,7 @@ def linksys_view(request):
 def other_view(request):
     object_other=Product.objects.filter(brand='Other')
     return  render(request,'brand_pages/other.html',{'object_other':object_other, })
-# gọi hàm cho từng sản phẩm
-def unifi202101_view(request):
-    object_unifi=Product.objects.filter(brand='Unifi')
-    return render(request,'product_pages/unifi202101.html',{'object_unifi':object_unifi,})
+
 
 # classify
 def router_view(request):
@@ -75,3 +72,52 @@ def camera_classify_view(request):
     object_camera=Product.objects.filter(classify='Camera')
     return render(request,'classify_pages/camera.html',{'object_camera':object_camera,})
 
+# gọi hàm cho từng sản phẩm
+def mikrotik202101_view(request):
+    object_mikrotik=Product.objects.filter(brand='Mikrotik')
+    return render(request,'product_pages/mikrotik202101.html',{'object_mikrotik':object_mikrotik,})
+def mikrotik202102_view(request):
+    object_mikrotik=Product.objects.filter(brand='Mikrotik')
+    return render(request,'product_pages/mikrotik202102.html',{'object_mikrotik':object_mikrotik,})
+def draytek202101_view(request):
+    object_draytek=Product.objects.filter(brand='Draytek')
+    return render(request,'product_pages/draytek202101.html',{'object_draytek':object_draytek,})
+def draytek202102_view(request):
+    object_draytek=Product.objects.filter(brand='Draytek')
+    return render(request,'product_pages/draytek202102.html',{'object_draytek':object_draytek,})
+def tplink202101_view(request):
+    object_tplink=Product.objects.filter(brand='TPLink')
+    return render(request,'product_pages/tplink202101.html',{'object_tplink':object_tplink,})
+def tplink202102_view(request):
+    object_tplink=Product.objects.filter(brand='TPLink')
+    return render(request,'product_pages/tplink202102.html',{'object_tplink':object_tplink,})
+def hpe202101_view(request):
+    object_hpe=Product.objects.filter(brand='HPE')
+    return render(request,'product_pages/hpe202101.html',{'object_hpe':object_hpe,})
+def hpe202102_view(request):
+    object_hpe=Product.objects.filter(brand='HPE')
+    return render(request,'product_pages/hpe202102.html',{'object_hpe':object_hpe,})
+def unifi202101_view(request):
+    object_unifi=Product.objects.filter(brand='Unifi')
+    return render(request,'product_pages/unifi202101.html',{'object_unifi':object_unifi,})
+def unifi202102_view(request):
+    object_unifi=Product.objects.filter(brand='Unifi')
+    return render(request,'product_pages/unifi202102.html',{'object_unifi':object_unifi,})
+def linksys202101_view(request):
+    object_linksys=Product.objects.filter(brand='Linksys')
+    return render(request,'product_pages/linksys202101.html',{'object_linksys':object_linksys,})
+def linksys202102_view(request):
+    object_linksys=Product.objects.filter(brand='Linksys')
+    return render(request,'product_pages/linksys202102.html',{'object_linksys':object_linksys,})
+def camera202101_view(request):
+    object_camera=Product.objects.filter(brand='Camera')
+    return render(request,'product_pages/camera202101.html',{'object_camera':object_camera,})
+def camera202102_view(request):
+    object_camera=Product.objects.filter(brand='Camera')
+    return render(request,'product_pages/camera202102.html',{'object_camera':object_camera,})
+def other202101_view(request):
+    object_other=Product.objects.filter(brand='Other')
+    return render(request,'product_pages/other202101.html',{'object_other':object_other,})
+def other202102_view(request):
+    object_other=Product.objects.filter(brand='Other')
+    return render(request,'product_pages/other202102.html',{'object_other':object_other,})
